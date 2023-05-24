@@ -1,0 +1,45 @@
+#include <bits/stdc++.h>
+ios::sync_with_stdio(0);
+cin.tie(0);
+using namespace std;
+int main() {
+	cout << "hello";
+}
+//     /n - faster than   << endl;
+
+int a, b;
+scanf("%d %d", & a, &b);  // - input
+printf("%d %d\n", a, b);  /// - output
+getline(cin, s);   /// strings 
+
+while (cin >> x){ } // when we dont know how many values
+
+freopen("input.txt", "r", stdin);  //files
+freopen("output.txt", "w", stdout);
+
+(a + b) % m = (a % m + b % m) % m;
+(a - b) % m = (a % m - b % m) % m;
+(a* b) % m = (a % m * b % m) % m;
+
+
+
+long long x = 1;      //n!%m
+for (int i = 1; i <= n; i++) {
+	x = (x * i) % m;
+}
+cout << x << "\n";
+
+printf("%.9\n", x);   // 9 sym after point 
+
+
+typedef long long ll; // new name of type
+typedef vector<int> vi;  //to shorten a code
+typedef pair<int, int> pi;
+
+//МАКРОСЫ - define
+#define F first
+
+#define REP(i, a, b) for (int i = a; i <=b; i++)
+REP(i, 1, n) {
+	search(i);
+}
