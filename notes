@@ -1,0 +1,5 @@
+ vector < vector <int> > a(n, vector <int> (m) ); // Объявление вектора на n строк по m элементов - двумерный вектор 
+
+#include <string> -> to_string 
+
+all of c++
