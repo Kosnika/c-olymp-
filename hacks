@@ -1,0 +1,16 @@
+sort(v.begin(),v.end());
+reverse(v.begin(),v.end());
+random_shuffle(v.begin(),v.end()); /// перемешиваются в случайном порядке 
+cout << *v.begin() << "\n";
+
+
+Более полезный пример: функция lower_bound возвращает итератор на 
+первый элемент отсортированного диапазона, значение которого не меньше x, а функция upper_bound – итератор на первый элемент, значение которого не больше x:
+vector<int> v = {2,3,3,5,7,8,8,8};
+auto a = lower_bound(v.begin(),v.end(),5);
+auto b = upper_bound(v.begin(),v.end(),5);
+cout << *a << " " << *b << "\n"; // 5 7
+
+
+sort(v.begin(),v.end());
+v.erase(unique(v.begin(),v.end()),v.end());
